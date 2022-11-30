@@ -48,8 +48,10 @@ store = {
 
 # TODO здесь ваш код
 
+goods_codes[]
+for code in goods:
+    goods_codes.append[code]
 
-
-
+print(goods)
 
 
