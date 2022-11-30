@@ -9,5 +9,11 @@
 #   Целочисленное деление ХХХ на YYY дает ZZZ
 
 a, b = 179, 37
+multiplier = 1
+while b * multiplier <= a:
+    multiplier = multiplier+1
+multiplier = multiplier -1
+print('Целоцисленное деление',a,'на',b,'дает',multiplier)
 
+print(a//b)
 # TODO здесь ваш код
