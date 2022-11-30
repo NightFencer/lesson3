@@ -47,11 +47,35 @@ store = {
 #     вывод на консоль количества и стоимости товара на складе
 
 # TODO здесь ваш код
+goods_names = []
+goods_codes = []
+for goods_name,goods_code in goods.items():
+    goods_names.append(goods_name)
+    goods_codes.append(goods_code)
+print(goods_names)
+print(goods_codes)
 
-goods_codes[]
-for code in goods:
-    goods_codes.append[code]
 
-print(goods)
+for product in goods_codes:
+    count_product = len(store[product])
+
+    i=0
+    product_cost = 0
+    total_product_quantity =0
+    while i <count_product:
+
+        product_price=store[product][i]['price']
+        product_quantity = store[product][i]['quantity']
+        #print('Art', product,'цена',product_price,'кол-во',product_quantity)
+        product_cost = product_cost+product_price*product_quantity
+        total_product_quantity = total_product_quantity+product_quantity
+        i = i + 1
+    current_product= goods_names[(goods_codes.index((product)))]
+    # print(current_product)
+    # print(total_product_quantity)
+    # print(product_cost)
+    print(current_product,'количество',total_product_quantity,'шт. общей стоимостью',product_cost,'руб')
+
+print(42*27+510*22+520*32+1200*2+1150*1+5000+95*12+97*43)
 
 
